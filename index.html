@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=640, shrink-to-fit=yes,user-scalable=no" />
+<meta property="og:url" content="http://dreamlandrecon.mamba.games" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="夢境連結封測" />
+<meta property="og:description" content="奇幻風格手遊《夢境連結！Re:Connected》，真實與夢境結合的奇幻世界，多元風格的唯美角色，扣人心弦的劇情故事，日本聲優配音的聽覺享受，邀您一同入夢體驗！限量封測開啟中！" />
+<meta property="og:image" content="img/fb.png">
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content = "telephone=no">
+<meta name="keywords" content="夢境連結,封測,啟動碼,官方網站,RPG手遊,日系RPG奇幻,動漫,二次元,聲優,Coser,織田信長,羈絆">
+<meta name="Description" content="奇幻風格手遊《夢境連結！Re:Connected》，真實與夢境結合的奇幻世界，多元風格的唯美角色，扣人心弦的劇情故事，日本聲優配音的聽覺享受，邀您一同入夢體驗！限量封測開啟中！">
+<title>《夢境連結！Re:Connected》CBT-入夢體驗招募中</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://unpkg.com/floating.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/reconnected.js"></script>
+<script src="js/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="css/reconnected.css">
+<link rel="stylesheet" href="css/reconnected_media.css">
+<link rel="stylesheet" href="css/jquery.modal.min.css">
+<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=560001084355539&autoLogAppEvents=1"></script>
+<!-- nav -->
+<div class="top">
+	<div class="logo"></div>
+	<div class="nav">
+		<div class="menu"></div>
+		<div class="line l1"></div>
+		<a href="#b1" class="b1"></a>
+		<div class="line"></div>
+		<a href="#b2" class="b2"></a>
+		<div class="line"></div>
+		<a href="#b3" class="b3"></a>
+		<div class="line"></div>
+		<a href="#b4" class="b4"></a>
+		<div class="line"></div>
+		<a href="#b5" class="b5"></a>
+		<div class="line"></div>
+		<a href="#b6" class="b6"></a>
+	</div>
+</div>
+<!-- mobile -->
+<div class="m_top">
+    <a href="#b1" class="m_logo">
+		<img src="img/rc_logo.png" alt="">
+	</a>
+</div>
+<div class="toggle"><a href="javascript:void(0);"></a></div>
+<div id="navbar" class="m_nav">
+    <ul>
+      <li class="mnav"><a href="#b1">首頁</a></li>
+      <li class="mnav"><a href="#b2">立即領取</a></li>
+      <li class="mnav"><a href="#b3">其他管道領取</a></li>
+      <li class="mnav"><a href="#b4">APK下載</a></li>
+      <li class="mnav"><a href="#b5">粉絲團</a></li>
+      <li class="mnav"><a href="#b6">注意事項</a></li>
+    </ul>
+</div>
+<!-- kv -->
+<div class="kv" id="b1">
+	<div class="m_kvlogo"></div>
+	<div class="kvtxt"></div>
+</div>
+<div class="kv2">
+	<div class="get" id="b2">
+		<div class="b2a">
+			<div><img src="img/content_1.png" onclick="changeSubmit()" /></div>
+			<div><img src="img/content_2.png" /></div>
+		</div>
+		<div class="b2b">
+			<div class="title t1"></div>
+			<div class="b2btxt">
+				<img src="img/n1.png" /> 為《夢境連結》粉絲專頁按讚 <span class="beLike"> <div class="fb-like" data-href="https://www.facebook.com/DreamlandReCon/" data-width="" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div></span><br/>
+				<img src="img/n2.png" /> 輸入手機號碼領取啟動碼
+			</div>
+			<div class="myForm bod">
+				<select id='myCountry' onchange="getCountry()">
+					<option value="" disabled selected hidden>選擇地區</option>
+					<option value="886">台灣</option>
+					<option value="852">香港</option>
+					<option value="853">澳門</option>
+					<option value="65">新加坡</option>
+					<option value="60">馬來西亞</option>
+				</select>
+				<input id="myPhone" maxlength="10" type="tel" name="" placeholder="請輸入手機號碼" onkeyup="value=value.replace(/[^\d]/g,'') ">
+			</div>
+			<div class="myPrompt">
+				<span class="prompt"></span>
+			</div>
+			<div class="check"><input id="myCheck" type="checkbox"> <label class="for_m2" for="myCheck">本人同意香港商曼巴互動娛樂股份有限公司台灣分公司使用上述個人資料傳送活動通知簡訊。</label></div>
+			<!-- <div class="googleRobert">
+				<div class="g-recaptcha" data-sitekey="6Ldscb0UAAAAAKVJm7_CWF6ncDeH5orlw4Fm5e1Z"></div>
+			</div> -->
+			<div class="warn">※提醒！請確認您的裝置為Android系統，啟動碼即為遊戲登入帳號，請妥善保管。※</div>
+			<div class="but1">
+				<div class="btnSub" id="btnSystem" onclick="myReservation()">入夢體驗</div>
+				<div class="btnSub" id="btnPhone">查詢啟動碼</div>
+			</div>
+		</div>
+	</div>
+	<div class="get" id="b3">
+		<div class="title t3"></div>
+		<div class="bk">※2019/10/16起，於以下平台進行啟動碼發送，歡迎踴躍領取，送完為止唷！※</div>
+		<div class="outlink">
+			<div class="icon">
+				<a href="https://acg.gamer.com.tw/get_game_serial.php?sn=108143" target="_blank">
+					<img src="img/buha.png" />
+				</a>
+			</div>
+			<div class="icon">
+				<a href="https://events.qoo-app.com/event/1087" target="_blank" class="b3b">
+					<img src="img/qoo.png" />
+				</a>
+			</div>
+			<div class="icon"><img src="img/ldplayer.png" /></div>
+		</div>
+	</div>
+	<div class="get" id="b4">
+		<div class="title t2"></div>
+		<div class="but1">
+			<a href="https://lihi1.cc/vRdSL" class="b3a"><img src="img/download.png" /></a>
+			<a href="https://events.qoo-app.com/event/1087" target="_blank" class="b3b"><img src="img/Qoo_logo.png" /></a>
+		</div>
+		<div class="bk">※開放下載時間：2019/10/16起～本次入夢體驗刪檔封測結束。※</div>
+	</div>
+</div>
+<div class="kv3">
+	<div class="get getVideo">
+			<div class="title t4"></div>
+			<div class="main4">
+				<div class="m1"></div>
+				<div class="m2"></div>
+				<div class="m3"></div>
+				<div class="m4"></div>
+			</div>
+			<iframe class="ytvideo" width="560" height="315" src="https://www.youtube.com/embed/ez0BXkY7GjY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="get" id="b5">
+			<div class="title t5"></div>
+			<div class="outlink">
+				<a href="https://www.facebook.com/DreamlandReCon/" target="_blank"><img src="img/facebook.png" onmouseover="hoverFB(this);" onmouseout="unhoverFB(this);" /></a>
+				<a href="https://www.youtube.com/channel/UCDz5uDZCTFIItGzuZxtzhGA" target="_blank"><img src="img/youtube.png" onmouseover="hoverYT(this);" onmouseout="unhoverYT(this);" /></a>
+				<a href="https://www.facebook.com/groups/633388773862145/" target="_blank"><img src="img/group.png" onmouseover="hoverGP(this);" onmouseout="unhoverGP(this);" /></a>
+			</div>
+	</div>
+	<div class="get" id="b6">
+			<div class="title t6"></div>
+			<ol class="notice">
+				<li>參加者於參加本次入夢體驗刪檔封測之同時，即同意接受本注意事項之相關內容與規範。</li>
+				<li>本次刪檔封測活動僅限Android用戶（APK版）參加，請玩家特別注意。</li>
+				<li>本次活動為「刪檔測試」，本公司於活動結束後將會清除所有遊戲資料與紀錄，相關遊戲角色資料與紀錄無法沿用至遊戲正式營運版本。</li>
+				<li>本次刪檔封測之相關遊戲設定僅為體驗限定，實際遊戲內容與設定，請以正式上市營運版本為主。</li>
+				<li>刪檔封測開放時間：2019/10/16 12:00起～2019/10/24 23:59止。</li>
+				<li>啟動碼發送時間：即日起～2019/10/23 12:00，限量5000組啟動碼，送完為止。</li>
+				<li>每組手機號碼限領一組啟動碼，每組啟動碼限一人使用，不得重複或多人使用。</li>
+				<li>參加者輸入正確手機號碼登記參與本次活動後，本公司將透過簡訊回傳提供本次活動之啟動碼。請參與者於填寫時確保所填寫之手機號碼之正確性。因個資保護相關條款，本公司無法針對啟動碼進行協尋或補發等相關工作。</li>
+				<li>請注意，所獲得之啟動碼即為遊戲登入帳號。登入遊戲時，請在帳號欄位直接輸入啟動碼，即可參與本次刪檔封測體驗活動。</li>
+				<li>本次刪檔封測期間，如有啟動碼無法使用等問題，請透過客服信箱回報：ccs@mamba.games，我們將會有專人協助處理。</li>
+				<li>玩家如因個人線路不穩導致斷線或連接失敗等問題，或因其他非可歸責於本公司之事由，本公司將一概不負任何責任，刪檔封測活動亦將照常舉行且不另作其他補償。</li>
+				<li>本公司保留變更或終止本活動時間、內容之權利。公告內容與訊息均以本活動網頁或Facebook官方粉絲團最後一次公佈之內容為準，請玩家密切注意活動網頁或Facebook官方粉絲團所公佈之訊息。</li>
+			</ol>
+	</div>
+</div>
+<div class="footer">
+	<div class="c01"></div>
+	<div class="c02"></div>
+	<div class="c03"></div>
+	<br class="for_m" />
+	<div class="c05"></div>
+	<div class="c04">
+		<ul>
+			<li>本遊戲為免費使用，但遊戲內部分內容或服務需另行支付其他費用。</li>
+			<li>請注意遊戲時間，避免沉迷於遊戲，可能影響身心健康。</li>
+		</ul>
+		Copyrights Ⓒ 2019 MAMBA Interactive Entertainment Limited (H.K.) Taiwan Branch, all rights reserved.
+	</div>
+</div>
+<div class="modal modal-system is-hide">
+	<div class="mTitle">
+		<h1>系統提示</h1>
+	</div>
+	<h2>您參與封測的電話是</h2>
+	<div class="myModalPhone">
+		<p class="plus">+</p>
+		<p class="countreNumber"></p>&nbsp;&nbsp;
+		<span class="phoneNumber"></span>
+	</div>
+	
+	<h2>資料送出後就不能更改囉！</h2>
+	<div class="but1 mySend">
+		<div class="btnSubmit2">確定</div>
+		<a class="rewrite" href="#close-modal" rel="modal:close" onclick="reWrite()">重填</a>
+	</div>
+</div>
+<div class="modal modal-expired is-hide">
+	<h2>很抱歉，啟動碼發放時間已經截止囉！</h2>
+	<div class="warn_ex">※提醒，已領取啟動碼者，封測時間至2019/10/24 23:59，敬請把握時間。※</div>
+</div>
+<div class="modal modal-phone is-hide">
+	<div class="mTitle">
+		<h1>請輸入您當初登記的手機號碼</h1>
+	</div>
+	<div class="myForm">
+		<select id='myCountry2' onchange="changeCountry()">
+			<option value="" disabled selected hidden>選擇地區</option>
+			<option value="886">台灣</option>
+			<option value="852">香港</option>
+			<option value="853">澳門</option>
+			<option value="65">新加坡</option>
+			<option value="60">馬來西亞</option>
+		</select>
+		<input id="startUpPhone" maxlength="10" type="tel" name="" placeholder="請輸入手機號碼" onkeyup="value=value.replace(/[^\d]/g,'') ">
+	</div>
+	<div class="prompt2"></div>
+	<span class="please"></span>
+	<div class="but1 mySend">
+		<div class="btnSubmit">查詢啟動碼</div>
+	</div>
+	<div class="bk">※提醒！每日限查詢3次※</div>
+</div>
+<div class="modal modal-submit is-hide">
+	<div class="mTitle">
+		<h1>感謝您的參與！</h1>
+	</div>
+	<div class="mystartUpNum">
+		<h2 id="startUpNumber">啟動碼即為您的遊戲登入帳號，請下載與安裝遊戲APK，即可參與封測。</h2>
+	</div>
+	<div class="modanContent">
+		<p>10/16前登記完成者，將以簡訊通知APK下載方式，</p>
+		<p>10/16(含)後登記之玩家，可直接由本網站下載APK 。</p>
+	</div>
+
+	<div class="but1 mySend">
+		<a href="#close-modal" rel="modal:close" onclick="reWrite()">確定</a>
+	</div>
+</div>
+<div class="modal modal-error is-hide">
+	<div class="mystartUpNum">
+		<h2 id="errorNumber"></h2>
+	</div>
+	<div class="but1 mySend">
+		<a href="#close-modal" rel="modal:close" onclick="reWrite()">確定</a>
+	</div>
+</div>
+<div class="full"></div>
+</body>
+<script>
+	function getCountry(){
+		let country = document.getElementById('myCountry').value;
+		if(country === '886'){
+			$('.prompt').text('請輸入10碼數字');
+			document.getElementById('myPhone').maxLength = 10;
+			document.getElementById('myPhone').value = '';
+		} else if(country === '852' || country === '853' || country === '65'){
+			$('.prompt').text('請輸入8碼數字');
+			document.getElementById('myPhone').maxLength = 8;
+			document.getElementById('myPhone').value = '';
+		} else if(country === '60'){
+			$('.prompt').text('請輸入9碼數字');
+			document.getElementById('myPhone').maxLength = 9;
+			document.getElementById('myPhone').value = '';
+		}
+	}
+	function changeCountry(){
+		let country2 = document.getElementById('myCountry2').value;
+		if(country2 === '886'){
+			$('.prompt2').text('請輸入10碼數字');
+			document.getElementById('startUpPhone').maxLength = 10;
+			document.getElementById('startUpPhone').value = '';
+		} else if(country2 === '852' || country2 === '853' || country2 === '65'){
+			$('.prompt2').text('請輸入8碼數字');
+			document.getElementById('startUpPhone').maxLength = 8;
+			document.getElementById('startUpPhone').value = '';
+		} else if(country2 === '60'){
+			$('.prompt2').text('請輸入9碼數字');
+			document.getElementById('startUpPhone').maxLength = 9;
+			document.getElementById('startUpPhone').value = '';
+		}
+	}
+	function myReservation(){
+		let country = document.getElementById('myCountry').value;
+		let phone = document.getElementById('myPhone').value;
+	}
+	$('#btnSystem').click(function(){
+		let re = /^[09]{2}[0-9]{8}$/;
+		let country = document.getElementById('myCountry').value;
+		let phone = document.getElementById('myPhone').value;
+		let check = document.getElementById('myCheck');
+		if(country === '' & phone === ''){
+			alert('請輸入手機與地區');
+			return false;
+		} else if(country === ''){
+			alert('請輸入地區');
+			return false;
+		} else if(country === '886' & !re.test(phone)){
+			alert('請輸入正確的手機號碼');
+			document.getElementById('myPhone').value = '';
+			return false;
+		} else if(country === '852' & phone.length < 8){
+			alert('請輸入正確的手機號碼');
+			document.getElementById('myPhone').value = '';
+			return false;
+		} else if(country === '853' & phone.length < 8){
+			alert('請輸入正確的手機號碼');
+			document.getElementById('myPhone').value = '';
+			return false;
+		} else if(country === '65' & phone.length < 8){
+			alert('請輸入正確的手機號碼');
+			document.getElementById('myPhone').value = '';
+			return false;
+		} else if(country === '60' & phone.length < 9){
+			alert('請輸入正確的手機號碼');
+			document.getElementById('myPhone').value = '';
+			return false;
+		} else if(phone === ''){
+			alert('請輸入手機');
+			return false;
+		} else if(check.checked == false){
+			alert('請確認隱私政策並勾選同意');
+			return false;
+		} else{
+			$('.countreNumber').text(country);
+			$('.phoneNumber').text(phone);
+			$('.modal-expired').modal();
+		}
+
+	})
+	$('#btnPhone').click(function(){		
+		$('.modal-phone').modal();
+	})
+	$('.btnSubmit').click(function(){
+		let re = /^[09]{2}[0-9]{8}$/;
+		let country = document.getElementById('myCountry2').value;
+		let phone = document.getElementById('startUpPhone').value;
+		$('.btnSubmit').text('送出中...');
+		$('.btnSubmit').addClass('disable');
+		if(phone === ''){
+			$('.please').text('請輸入手機號碼');
+			$('.btnSubmit').text('查詢啟動碼');
+			$('.btnSubmit').removeClass('disable');
+			return false
+		} else if(country === ''){
+			$('.please').text('請選擇地區');
+			$('.btnSubmit').text('查詢啟動碼');
+			$('.btnSubmit').removeClass('disable');
+			return false;
+		} else if(country === '886' & !re.test(phone)){
+			$('.please').text('請輸入正確的手機號碼');
+			$('.btnSubmit').text('查詢啟動碼');
+			$('.btnSubmit').removeClass('disable');
+			document.getElementById('startUpPhone').value = '';
+			return false;
+		} else if(country === '852' & phone.length < 8){
+			$('.please').text('請輸入正確的手機號碼');
+			$('.btnSubmit').text('查詢啟動碼');
+			$('.btnSubmit').removeClass('disable');
+			document.getElementById('startUpPhone').value = '';
+			return false;
+		} else if(country === '853' & phone.length < 8){
+			$('.please').text('請輸入正確的手機號碼');
+			$('.btnSubmit').text('查詢啟動碼');
+			$('.btnSubmit').removeClass('disable');
+			document.getElementById('startUpPhone').value = '';
+			return false;
+		} else if(country === '65' & phone.length < 8){
+			$('.please').text('請輸入正確的手機號碼');
+			$('.btnSubmit').text('查詢啟動碼');
+			$('.btnSubmit').removeClass('disable');
+			document.getElementById('startUpPhone').value = '';
+			return false;
+		} else if(country === '60' & phone.length < 9){
+			$('.please').text('請輸入正確的手機號碼');
+			$('.btnSubmit').text('查詢啟動碼');
+			$('.btnSubmit').removeClass('disable');
+			document.getElementById('startUpPhone').value = '';
+			return false;
+		} else {
+			var data = {'country': country,'phone': phone};
+			$.ajax({
+				type: "POST",
+				url: "http://dreamlandrecon.mamba.games/api_cb/inquire",
+				data: data,
+				dataType: 'json',
+				success: function (response) {
+					if (response.status == '1') {
+						$('.modal-submit').modal();
+						$('.please').text('');
+						document.getElementById('startUpPhone').value = '';
+						document.getElementById('myCountry2').value = '';
+						document.getElementById('myCheck').checked = false;
+						$('.btnSubmit').text('查詢啟動碼');
+						$('.btnSubmit').removeClass('disable');
+						$('.prompt2').text('');
+					}else if(response.msg === 'over_query_times'){
+						$('.modal-error').modal();
+						$('#errorNumber').text('很抱歉，您今天已查詢超過三次囉！');
+						$('.please').text('');
+						document.getElementById('startUpPhone').value = '';
+						document.getElementById('myCountry2').value = '';
+						document.getElementById('myCheck').checked = false;
+						$('.btnSubmit').text('查詢啟動碼');
+						$('.btnSubmit').removeClass('disable');
+						$('.prompt2').text('');
+					}else{
+						$('.modal-error').modal();
+						$('#errorNumber').text('查無帳戶');
+						$('.please').text('');
+						document.getElementById('startUpPhone').value = '';
+						document.getElementById('myCountry2').value = '';
+						document.getElementById('myCheck').checked = false;
+						$('.btnSubmit').text('查詢啟動碼');
+						$('.btnSubmit').removeClass('disable');
+						$('.prompt2').text('');
+					}
+
+				},
+				error: function (error) {
+					alert('連結失敗');
+				},
+				complete: function (response) {
+				}
+			});
+		}
+	})
+	$('.btnSubmit2').click(function(){
+		let country = document.getElementById('myCountry').value;
+		let phone = document.getElementById('myPhone').value;
+		var data = {'country': country,'phone': phone};
+		$('.btnSubmit2').text('送出中...');
+		$('.btnSubmit2').addClass('disable');
+		$.ajax({
+			type: "POST",
+			url: "http://dreamlandrecon.mamba.games/api_cb/reserve",
+			data: data,
+			dataType: 'json',
+			success: function (response) {
+				if (response.status == '1') {
+					$('.modal-submit').modal();
+					$('.please').text('')
+					$('.btnSubmit2').text('確定');
+					$('.btnSubmit2').removeClass('disable');
+				} else if (response.msg == 'phone_error') {
+					$('.modal-error').modal()
+					$('#errorNumber').text('您輸入的電話號碼格式錯誤！！');
+					$('.btnSubmit2').text('確定');
+					$('.btnSubmit2').removeClass('disable');
+				} else if (response.msg == 'over_number') {
+					$('.modal-error').modal()
+					$('#errorNumber').text('感謝您的參與，啟動碼已全數領取完畢。');
+					$('.btnSubmit2').text('確定');
+					$('.btnSubmit2').removeClass('disable');
+				} else {
+					$('.modal-error').modal();
+					$('#errorNumber').text('您已登記過了！！');
+					$('.please').text('');
+					$('.btnSubmit2').text('確定');
+					$('.btnSubmit2').removeClass('disable');
+				}
+
+			},
+			error: function (error) {
+				alert('連結失敗');
+			},
+			complete: function (response) {
+			}
+		});
+	})
+	function reWrite(){
+		document.getElementById('myCountry').value = '';
+		document.getElementById('myPhone').value = '';
+		$('.prompt').text('');
+		document.getElementById('myCheck').checked = false;
+	}
+	function hoverFB(e){
+		e.setAttribute('src', 'img/facebook_2.png');
+	}
+	function unhoverFB(e){
+		e.setAttribute('src', 'img/facebook.png');
+	}
+	function hoverYT(e){
+		e.setAttribute('src', 'img/youtube_2.png');
+	}
+	function unhoverYT(e){
+		e.setAttribute('src', 'img/youtube.png');
+	}
+	function hoverGP(e){
+		e.setAttribute('src', 'img/group_2.png');
+	}
+	function unhoverGP(e){
+		e.setAttribute('src', 'img/group.png');
+	}
+
+</script>
+</html>
